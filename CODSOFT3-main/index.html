@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Virtual Bistro</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Virtual Bistrot</h1>
+            <p>Welcome to our website!</p>
+        </div>
+    </header>
+
+    <section id="features">
+        <div class="container">
+            <h2>Today's Special Offers:</h2>
+            <div class="feature">
+                <img src="https://www.fnp.com/images/pr/l/v200/rose-paradise-chocolate-cake-eggless-half-kg_2.jpg" alt="Feature 1">
+                <h3>Offer 1: cakes</h3>
+                <p>any type of cake on your doors
+                    <div>GET FLAT 15% OFF ON ORDER WORTH RS.1500 & ABOVE</p>
+                    </div>
+                    <button class="order-button">
+                        <a href="https://www.fnp.com/all-cakes-lp?promo=cakes_micro_desk_explore_more_pos_2&fq-feature_FTCKTYPE=Cream%2520Cakes" style="text-decoration: none; color: inherit;">
+                            Order Now
+                        </a>
+                    </button>
+                    
+            </div>
+            <div class="feature">
+                <img src="food1.png" alt="Feature 2">
+                <h3>Offer 2: Burgers and wraps</h3>
+                <p>Classic Combo Delight
+                    <div>
+                        Burger king
+                        best quality
+                        at best price </p>
+                    </div>
+                    <button class="order-button">
+                        <a href="https://www.burgerking.in/product-listing">
+                            Order Now
+                        </a>
+                    </button>
+            </div>
+            <div class="feature">
+                <img src="food3.png" alt="Feature 3">
+                <h3>Offer 3: chocolate dish</h3>
+                <p>Chocolate Lover's Dream
+                    <div>
+                    <p>
+                        best bakery items
+                        At affordable prices
+                    </p>
+                    </div>
+                    <button class="order-button">
+                        <a href="https://www.warmoven.in/cupcakes">
+                            Order Now
+                        </a>
+                    </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta">
+        <div class="container">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Stay updated with our latest news and offers!</p>
+            <form>
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="subscribe-button">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 VIRTUAL BISTRO. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js">
+        // Simple button animation
+const orderButtons = document.querySelectorAll('.order-button');
+orderButtons.forEach(button => {
+    button.addEventListener('mouseenter', () => {
+        button.style.transform = 'scale(1.1)';
+    });
+
+    button.addEventListener('mouseleave', () => {
+        button.style.transform = 'scale(1)';
+    });
+});
+
+    </script>
+</body>
+
+</html>
